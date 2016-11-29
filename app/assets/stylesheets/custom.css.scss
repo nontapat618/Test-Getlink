@@ -1,0 +1,150 @@
+@import "bootstrap-sprockets";
+
+@import "bootstrap";
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.col-md-auto{
+  text-align: center;
+  padding: 0 15px 0 15px;
+  float:left;
+}
+
+.col-md-auto:first-child:nth-last-child(4),
+.col-md-auto:first-child:nth-last-child(4) ~ .col-md-auto {
+    width: 25%;
+}
+
+.section1{
+  background: #eee;
+}
+
+.section2 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.50), 
+      rgba(0, 0, 0, 0.50)
+    ),url('getlink.png');  
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  text-align: center;
+  //color: white;
+}
+.section2 .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.section2 .intro-text .intro-lead-in {
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+.section2 .intro-text .intro-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .section2 .intro-text {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+  .section2 .intro-text .intro-lead-in {
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  .section2 .intro-text .intro-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
+
+.wrap-text{
+    width: 100%;
+    word-wrap: break-word;
+}
+
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+
+ul.list-inline {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #C0392B;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #EC5451;
+}
+
+
+.portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.portfolio-link .portfolio-hover {
+  background: rgba(192, 57, 43, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+.portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+.portfolio-item img {
+    width: 260px; 
+    height: 170px; 
+}
+
+.font-bold{
+ font-weight: bold; 
+}
